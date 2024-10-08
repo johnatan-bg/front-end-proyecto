@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE
+ html>
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
@@ -44,11 +45,28 @@
                   <li class="nav-item">
                      <a href="contacto.html" class="nav-link">Contacto</a>
                   </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-
+             </ul>
+             <ul class="navbar-nav">
+               <!-- 
+               <?php if (is_user_logged_in()): ?>
+               -->
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       Hola, Usuario
+                   </a>
+                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                       <li><a class="dropdown-item" href="perfil.html">Mi Perfil</a></li>
+                       <li><hr class="dropdown-divider"></li>
+                       <li><a class="dropdown-item" href="cierre de sesion.html">Cerrar Sesión</a></li>
+                   </ul>
+               </li>
+               <!-- 
+               <?php else: ?>
+               -->
+           </ul>
+       </div>
+   </div>
+</nav>
       <!--carrusel-->
 
       <div id="carouselExampleIndicators" class="carousel slide">

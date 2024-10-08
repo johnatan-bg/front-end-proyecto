@@ -48,9 +48,27 @@
                      <a class="nav-link active" href="contacto.html">Contacto</a>
                   </li>
                </ul>
-            </div>
-         </div>
-      </nav>
+               <ul class="navbar-nav">
+                  <!-- 
+                  <?php if (is_user_logged_in()): ?>
+                  -->
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Hola, Usuario
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="perfil.html">Mi Perfil</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="cierre de sesion.html">Cerrar Sesión</a></li>
+                      </ul>
+                  </li>
+                  <!-- 
+                  <?php else: ?>
+                  -->
+              </ul>
+          </div>
+      </div>
+  </nav>
 
       <!-- Formulario de contacto -->
       <div class="container mt-5">
